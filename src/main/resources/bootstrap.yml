@@ -1,0 +1,24 @@
+# Server settings
+server:
+  port: 8080
+  tomcat:
+    max-threads: 2000
+    uri-encoding: UTF-8
+    accesslog:
+      directory: /var/log/ping-pong
+      prefix: access_log
+      enabled: true
+management:
+  port: 0
+  security:
+    enabled: false
+
+# SPRING PROFILES
+spring:
+  application:
+    name: ping-pong
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
