@@ -1,4 +1,4 @@
-FROM docker.io/centos:7.3.1611
+FROM docker.io/openjdk:8-alpine
 MAINTAINER leon <bjsmith@sina.com>
 ADD target/ping_pong-*.jar /opt/ping_pong.jar
 
