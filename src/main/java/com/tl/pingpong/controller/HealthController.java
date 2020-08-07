@@ -14,6 +14,6 @@ public class HealthController {
     @GetMapping(value = "/ping")
     public ResponseEntity<String> ping() {
         logger.info("Ping...");
-        return ResponseEntity.status(HttpStatus.OK).body("pong");
+        return ResponseEntity.status(HttpStatus.OK).body("pong at " + System.currentTimeMillis() +"ms");
     }
 }
