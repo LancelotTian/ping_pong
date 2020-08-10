@@ -99,4 +99,37 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>private-release</id>
+            <name>libs-releases</name>
+            <url>http://jfrog-default.apps.cluster-beijing-48f2.beijing-48f2.example.opentlc.com/artifactory/libs-release</url>
+        </repository>
+        <repository>
+            <snapshots/>
+            <id>private-snapshots</id>
+            <name>libs-snapshots</name>
+            <url>http://jfrog-default.apps.cluster-beijing-48f2.beijing-48f2.example.opentlc.com/artifactory/libs-snapshot</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>private-release</id>
+            <name>plugins-releases</name>
+            <url>http://jfrog-default.apps.cluster-beijing-48f2.beijing-48f2.example.opentlc.com/artifactory/libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+            <snapshots/>
+            <id>private-snapshots</id>
+            <name>plugins-releases</name>
+            <url>http://jfrog-default.apps.cluster-beijing-48f2.beijing-48f2.example.opentlc.com/artifactory/libs-snapshot</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
